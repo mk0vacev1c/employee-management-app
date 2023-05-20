@@ -26,48 +26,53 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+Getting Started
+Follow these instructions to get the application up and running on your local machine.
 
-```bash
-$ npm install
-```
+Installation
+Clone the repository:
 
-## Running the app
+bash
+Copy code
+git clone https://github.com/your-username/employee-management-app.git
+Navigate to the project directory:
 
-```bash
-# development
-$ npm run start
+bash
+Copy code
+cd employee-management-app
+Install the dependencies:
 
-# watch mode
-$ npm run start:dev
+bash
+Copy code
+npm install
+Configuration
+Set up MongoDB:
 
-# production mode
-$ npm run start:prod
-```
+Make sure MongoDB is installed and running on your local machine.
+Update the MongoDB connection details in the .env file.
+Swagger Documentation (Optional):
 
-## Test
+To access the Swagger documentation, go to http://localhost:3000/api/docs after starting the application.
+Customize the Swagger documentation in the main.ts file.
+Usage
+Start the application:
 
-```bash
-# unit tests
-$ npm run test
+bash
+Copy code
+npm run start
+Access the application endpoints:
 
-# e2e tests
-$ npm run test:e2e
+Base URL: http://localhost:3000
+Endpoints
+The following endpoints are available for managing employees:
 
-# test coverage
-$ npm run test:cov
-```
+GET /employees: Retrieve a paginated list of employees.
+GET /employees/:id: Retrieve a specific employee by ID.
+POST /employees: Create a new employee.
+PUT /employees/:id: Update an employee by ID.
+DELETE /employees/:id: Soft delete an employee by ID.
+GET /employees/deleted: Retrieve a list of deleted employees.
+For detailed information about each endpoint, refer to the Swagger documentation.
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Testing
+You can test the application by using tools like Postman or cURL to interact with the API endpoints. Refer to the "Endpoints" section for details on each endpoint.

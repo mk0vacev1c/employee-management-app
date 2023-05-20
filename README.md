@@ -32,18 +32,14 @@ Follow these instructions to get the application up and running on your local ma
 Installation
 Clone the repository:
 
-bash
-Copy code
 git clone https://github.com/your-username/employee-management-app.git
 Navigate to the project directory:
 
-bash
-Copy code
+
 cd employee-management-app
 Install the dependencies:
 
-bash
-Copy code
+
 npm install
 Configuration
 Set up MongoDB:
@@ -57,12 +53,12 @@ Customize the Swagger documentation in the main.ts file.
 Usage
 Start the application:
 
-bash
-Copy code
+
 npm run start
 Access the application endpoints:
 
 Base URL: http://localhost:3000
+
 Endpoints
 The following endpoints are available for managing employees:
 

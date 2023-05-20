@@ -35,6 +35,16 @@ Follow these instructions to get the application up and running on your local ma
 $ npm install
 ```
 
+## Configuration
+Set up MongoDB:
+
+Make sure MongoDB is installed and running on your local machine.
+Update the MongoDB connection details in the .env file.
+Swagger Documentation (Optional):
+
+To access the Swagger documentation, go to http://localhost:3000/api/docs after starting the application.
+Customize the Swagger documentation in the main.ts file.
+
 ## Running the app
 
 ```bash
@@ -47,6 +57,16 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Endpoints
+The following endpoints are available for managing employees:
+
+GET /employees: Retrieve a paginated list of employees.
+GET /employees/:id: Retrieve a specific employee by ID.
+POST /employees: Create a new employee.
+PUT /employees/:id: Update an employee by ID.
+DELETE /employees/:id: Soft delete an employee by ID.
+GET /employees/deleted: Retrieve a list of deleted employees.
 
 ## Test
 

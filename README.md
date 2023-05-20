@@ -29,46 +29,35 @@
 Getting Started
 Follow these instructions to get the application up and running on your local machine.
 
-Installation
-Clone the repository:
+## Installation
 
-git clone https://github.com/your-username/employee-management-app.git
-Navigate to the project directory:
+```bash
+$ npm install
+```
 
+## Running the app
 
-cd employee-management-app
-Install the dependencies:
+```bash
+# development
+$ npm run start
 
+# watch mode
+$ npm run start:dev
 
-npm install
-Configuration
-Set up MongoDB:
+# production mode
+$ npm run start:prod
+```
 
-Make sure MongoDB is installed and running on your local machine.
-Update the MongoDB connection details in the .env file.
-Swagger Documentation (Optional):
+## Test
 
-To access the Swagger documentation, go to http://localhost:3000/api/docs after starting the application.
-Customize the Swagger documentation in the main.ts file.
-Usage
-Start the application:
+```bash
+# unit tests
+$ npm run test
 
+# e2e tests
+$ npm run test:e2e
 
-npm run start
-Access the application endpoints:
+# test coverage
+$ npm run test:cov
+```
 
-Base URL: http://localhost:3000
-
-Endpoints
-The following endpoints are available for managing employees:
-
-GET /employees: Retrieve a paginated list of employees.
-GET /employees/:id: Retrieve a specific employee by ID.
-POST /employees: Create a new employee.
-PUT /employees/:id: Update an employee by ID.
-DELETE /employees/:id: Soft delete an employee by ID.
-GET /employees/deleted: Retrieve a list of deleted employees.
-For detailed information about each endpoint, refer to the Swagger documentation.
-
-Testing
-You can test the application by using tools like Postman or cURL to interact with the API endpoints. Refer to the "Endpoints" section for details on each endpoint.
